@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous"></script>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link rel="stylesheet" href="index.css">
+    <script src="/index.js"></script>
+    <title>Document</title>
+</head>
+<body>
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+        <div class="container-fluid">
+          <a class="navbar-brand" href="#">Stack Visualization</a>
+          <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+            <span class="navbar-toggler-icon"></span>
+          </button>
+          <div class="collapse navbar-collapse" id="navbarNav">
+            <ul class="navbar-nav">
+              <li class="nav-item">
+                <a class="nav-link active" aria-current="page" href="#">Home</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">Theory</a>
+              </li>
+              <li class="nav-item">
+                <a class="nav-link" href="#">About</a>
+             
+            </ul>
+          </div>
+        </div>
+      </nav>
+    <main>
+        <div id="size">
+            <input type="number" max="10" min="5" required value="5" id="stacksize"> 
+            <button class="btn btn-success"id="set-size" onclick="setStackSize()">Set Stack Size</button>
+        </div>
+        <div id="box">
+            <table class="table table-dark table-hover" id="tab">
+                
+                
+              </table>
+        </div>
+        <div id="btn-holder">
+            <input type="number" max="10" min="1" id="push-val" required value="8">
+            <button class="btn btn-warning" id="push" onclick="push()">PUSH</button>
+            <button id="pop" class="btn btn-danger" onclick="pop()">POP</button>
+            <button id="pop" class="btn btn-primary" onclick="reset()">Reset</button>
+            
+        </div>
+    </main>   
+    <div class="footer">
+        <p>Developed with ❤️ by Shashank Pandey</p>
+      </div>
+</body>
+</html>
