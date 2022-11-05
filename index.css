@@ -94,3 +94,9 @@ td{
   #title img{
     margin-right: 5px;
   }
+  .dark{
+    background-color: black;
+  }
+  .light{
+    background-color: #fefefe;
+  }

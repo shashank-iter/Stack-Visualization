@@ -20,8 +20,8 @@
     <script src="/index.js"></script>
     <title>Document</title>
   </head>
-  <body>
-    <nav class="navbar navbar-expand-lg navbar-dark bg-dark">
+  <body class="light">
+    <nav class="navbar navbar-expand-lg navbar-dark bg-dark" id="nav">
       <div class="container-fluid">
         <a class="navbar-brand" href="#">Stack Visualization</a>
         <button
@@ -41,7 +41,7 @@
               <a class="nav-link active" aria-current="page" href="#">Home</a>
             </li>
             <li class="nav-item">
-              <a class="nav-link" href="#">Theory</a>
+              <a class="nav-link" href="https://www.geeksforgeeks.org/introduction-to-stack-data-structure-and-algorithm-tutorials/" target="_blank">Theory</a>
             </li>
             <li class="nav-item">
               <a class="nav-link" href="# "onclick="instruct()">Instructions</a>
@@ -49,7 +49,7 @@
             <li class="nav-item">
               <a class="nav-link" href="/about.html">About</a>
             </li>
-            
+           
           </ul>
         </div>
       </div>
@@ -82,9 +82,7 @@
         />
         <button class="btn btn-warning" id="push" onclick="push()">PUSH</button>
         <button id="pop" class="btn btn-danger" onclick="pop()">POP</button>
-        <button id="pop" class="btn btn-primary" onclick="reset()">
-          Reset
-        </button>
+        <button id="pop" class="btn btn-primary" onclick="reset()">Reset</button>
       </div>
     </main>
     <div class="modal fade" id="myModal" role="dialog">

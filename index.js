@@ -2,6 +2,7 @@ let stacksize = 0;
 let count = -1;
 let stackStop = 0;
 window.onload=instruct();
+
 function push() {
   //console.log(modal);
   if (stacksize < 5) {
@@ -135,3 +136,4 @@ function instruct() {
     });
   });
 }
+ 
