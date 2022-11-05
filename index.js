@@ -35,6 +35,16 @@ function push() {
         // alert("Stack Overflow, can't push");
         
     }
+    $(document).ready(function(){
+      // Show the Modal on load
+      $("#myModal").modal("show");
+      let textModal=document.getElementById("modal-text");
+      textModal.innerHTML=`Element pushed in index ${count}`;
+      // Hide the Modal
+      $("#close").click(function(){
+        $("#myModal").modal("hide");
+      });
+    });
     count++;
     let x = document.getElementById("push-val").value;
     console.log(x);
@@ -76,9 +86,22 @@ function pop() {
         // alert("Stack Underflow: Stack is Empty, cannot POP any element.");
         
     }
+    $(document).ready(function(){
+      // Show the Modal on load
+      $("#myModal").modal("show");
+      let textModal=document.getElementById("modal-text");
+      textModal.innerHTML=`Element removed from index ${count+1}`;
+      // Hide the Modal
+      $("#close").click(function(){
+        $("#myModal").modal("hide");
+      });
+    });
+
     count--;
 
+
     a.textContent="Empty";
+    
 }
 
 
@@ -100,3 +123,4 @@ function setStackSize() {
 function reset() {
     window.location.reload();
 }
+
