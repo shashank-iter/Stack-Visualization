@@ -88,3 +88,9 @@ td{
   #title{
     text-align: left;
   }
+  #size{
+    margin-bottom: 10px;
+  }
+  #title img{
+    margin-right: 5px;
+  }
