@@ -10,6 +10,8 @@ function push() {
     $(document).ready(function () {
       // Show the Modal on load
       $("#myModal").modal("show");
+      let x = document.getElementById("title")
+      x.innerHTML = `Attention!`;
       let textModal = document.getElementById("modal-text");
       textModal.textContent = "Please set the stack size first.";
       // Hide the Modal
@@ -23,6 +25,8 @@ function push() {
     $(document).ready(function () {
       // Show the Modal on load
       $("#myModal").modal("show");
+      let x = document.getElementById("title")
+      x.innerHTML = `Attention!`;
       let textModal = document.getElementById("modal-text");
       textModal.textContent = "Stack Overflow, can't push elements.";
       // Hide the Modal
@@ -36,6 +40,8 @@ function push() {
   $(document).ready(function () {
     // Show the Modal on load
     $("#myModal").modal("show");
+    let x = document.getElementById("title")
+    x.innerHTML = `Element Pushed In`;
     let textModal = document.getElementById("modal-text");
     textModal.innerHTML = `Element pushed in index ${count}`;
     // Hide the Modal
@@ -56,6 +62,8 @@ function pop() {
     $(document).ready(function () {
       // Show the Modal on load
       $("#myModal").modal("show");
+      let x = document.getElementById("title")
+      x.innerHTML = `Attention!`;
       let textModal = document.getElementById("modal-text");
       textModal.textContent = "Please set size of the Stack.";
       // Hide the Modal
@@ -72,6 +80,8 @@ function pop() {
     $(document).ready(function () {
       // Show the Modal on load
       $("#myModal").modal("show");
+      let x = document.getElementById("title")
+    x.innerHTML = `Attention!`;
       let textModal = document.getElementById("modal-text");
       textModal.textContent =
         "Stack Underflow: Stack is Empty, cannot POP any element.";
@@ -86,6 +96,8 @@ function pop() {
   $(document).ready(function () {
     // Show the Modal on load
     $("#myModal").modal("show");
+    let x = document.getElementById("title")
+    x.innerHTML = `Element Popped Out `;
     let textModal = document.getElementById("modal-text");
     textModal.innerHTML = `Element removed from index ${count + 1}`;
     // Hide the Modal
