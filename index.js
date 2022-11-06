@@ -135,7 +135,7 @@ function reset() {
 
 function instruct() {
  
-  $(document).ready(function () {
+ 
     // Show the Modal on load
     $("#myModal").modal("show");
     let x = document.getElementById("title")
@@ -146,6 +146,6 @@ function instruct() {
     $("#close").click(function () {
       $("#myModal").modal("hide");
     });
-  });
+ 
 }
  
